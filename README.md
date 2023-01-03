@@ -12,4 +12,4 @@
 
 # Amplify Painter
 
-More info soon.
+  More info soon.
