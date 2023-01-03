@@ -1,1 +1,3 @@
-# AmplifyPainter
+# Amplify Painter
+
+More info soon.
