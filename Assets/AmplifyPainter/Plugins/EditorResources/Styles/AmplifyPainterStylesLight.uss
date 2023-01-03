@@ -1,0 +1,46 @@
+#LayerList
+{
+	background-color: rgb(116, 116, 116);
+}
+
+.LayerMainElement
+{
+	background-color: rgb(193, 193, 193);
+}
+
+.LayerMainElement.layer-selected
+{
+	background-color: rgb(143, 143, 143);
+}
+
+.LayerMainElement.layer-selected Label
+{
+	color: rgb(244, 244, 244);
+}
+
+.LayerMainElement:hover
+{
+	background-color: rgb(178, 178, 178);
+}
+
+.LayerMainElement.layer-selected:hover
+{
+	background-color: rgb(143, 143, 143);
+}
+
+#LayerViewButtonAnchor
+{
+	background-color: rgb(129, 129, 129);
+}
+
+#LayerViewButtonAnchor > .LayerViewButton
+{
+	-unity-background-image-tint-color: rgb(40, 40, 40);
+	opacity: 0.75;
+}
+
+#LayerViewButtonAnchor > .LayerViewButton:hover
+{
+	-unity-background-image-tint-color: rgb(33, 33, 33);
+	opacity: 1;
+}

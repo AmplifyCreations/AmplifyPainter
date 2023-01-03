@@ -1,0 +1,440 @@
+/* MainUI UI Zone*/
+#MainUI Label
+{
+    width: 100px;
+}
+
+#MainUI.container 
+{
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+#MainUI #row 
+{
+    flex-direction: row;
+}
+
+#MainUI #Tabs 
+{
+    flex-direction: row;
+}
+
+#MainUI #column
+{
+    flex-direction: column;
+}
+
+#MainUI TextField
+{
+    flex-grow: 1;
+}
+
+#MainUI TextField:hover
+{
+    background-color: rgb(255, 255, 0);
+}
+
+#MainUI IntegerField
+{
+    width: 100px;
+    background-color: rgb(0, 0, 255);
+}
+
+#MainUI ObjectField
+{
+	font-size: 15px;
+    -unity-font-style: normal;
+}
+
+/* Brush UI Zone*/
+#BrushUI
+{
+	margin: 0px;
+	flex-shrink: 0;
+}
+#BrushUI > VisualElement
+{
+	margin-left: 1px;
+	margin-right: 1px;
+	margin-top: 1px;
+}
+
+#BrushUI .slider-with-field FloatField
+{
+	width: 50px;
+	margin-left: auto;
+}
+
+#BrushUI .slider-with-field > Slider
+{
+	overflow: visible;
+}
+
+#BrushUI .slider-with-field > FloatField
+{
+	margin-left: 5px;
+}
+
+#BrushUI .slider-with-field Slider, #BrushUI .slider-with-field Slider > VisualElement
+{
+	flex-grow: 1;
+}
+
+#BrushUI .slider-with-field
+{
+    flex-direction: row;
+}
+
+#BrushUI Label.unity-label
+{
+	min-width: 100px;
+}
+
+#BrushChannelLabel
+{
+	-unity-font-style: bold;
+}
+
+#BrushPerChannelComponents
+{
+	-unity-font-style: bold;
+	margin-top: 5px;
+	margin-bottom: 2px;
+}
+
+.ComponentToggle
+{
+	width: 60px;
+	height: 16px;
+	flex-grow: 1;
+}
+
+.ComponentToggle Label
+{
+	flex-grow: 1;
+	min-width: 0px;
+	font-size: 9px;
+}
+
+.ComponentToggle > VisualElement
+{
+	-unity-slice-right: 2;
+}
+
+/* Export UI Zone*/
+
+#ExportUI
+{
+	margin: 5px;
+}
+
+#ExportUI > #Footer
+{	
+	padding: 0px;
+	height : 21px;
+	min-height : 21px;
+	margin-top: auto;
+}
+
+#ExportUI > #Footer > Button
+{	
+	margin-left: auto;
+	width : 100px;
+	height : 19px;
+}
+
+/* Channel items from Channel View*/
+
+#ChannelItem
+{
+	flex-direction: row;
+	margin-top: 5px;
+}
+
+
+#ChannelItemHeader > #ChannelItemNameLabel
+{
+	width: 120px;
+	margin-left: 2px;
+	flex-shrink: 0.5;
+	flex-grow: 1;
+	-unity-font-style: bold;
+}
+
+#ChannelItemHeader > #ChannelItemTypeLabel
+{
+	width: 80px;
+	margin-left: 2px;
+	flex-grow: 0;
+	flex-shrink: 1;
+	overflow:hidden;
+	-unity-font-style: bold;
+}
+
+#ChannelItemHeader > #ChannelItemPropertiesLabel
+{
+	width: 100px;
+	margin-left: 2px;
+	flex-grow: 0;
+	flex-shrink: 1;
+	overflow: hidden;
+	-unity-font-style: bold;
+}
+
+#ChannelItem > #ChannelItemName
+{
+	flex-grow: 1;
+	flex-shrink: 0.5;
+	width: 120px;
+	margin-left: 2px;
+}
+
+#ChannelItem > #ChannelItemType
+{
+	flex-grow: 0;
+	flex-shrink: 1;
+	width: 80px;
+	margin-left: 2px;
+}
+
+#ChannelItem > #ChannelItemProperties
+{
+	flex-grow: 0;
+	flex-shrink: 1;
+	width: 100px;
+	margin-left: 2px;
+}
+
+#ChannelItem > #ChannelItemDeleteButton
+{
+	width : 18px;
+	margin-left: 2px;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+#ChannelItemHeader > #ChannelItemAddButton
+{
+	width : 18px;
+	margin-left: 2px;
+}
+
+/* Layer items from Layer View*/
+#LayerBlendOpacityAnchor
+{
+	flex-grow : 0;
+	margin-right: 2px;
+}
+
+#LayerBlendOpacityAnchor > #LayerBlendMode
+{
+	min-width : 75px;
+}
+
+#LayerBlendOpacityAnchor > #LayerOpacityGroup > #LayerOpacitySlider
+{
+	overflow : visible;
+}
+#LayerList
+{
+	background-color: rgb(37, 37, 37);
+}
+
+.LayerMainElement
+{
+	flex-direction: row;
+	margin-bottom: 1px;
+	border-color: rgb(0, 0, 0);
+	align-items: center;
+	background-color: rgb(56, 56, 56);
+}
+
+.LayerMainElement.ondrag, .LayerMainElement.ondrag *
+{
+	opacity: 0.65;
+}
+
+.LayerMainElement.layer-selected
+{
+	background-color: rgb(72, 72, 72);
+}
+
+.LayerMainElement:hover
+{
+	background-color: rgb(48, 48, 48);
+}
+
+.LayerMainElement.layer-selected:hover
+{
+	background-color: rgb(72, 72, 72);
+}
+
+.LayerMainElement > #LayerToggleSelection
+{
+	padding-right: 5px;
+}
+
+.LayerMainElement > #LayerToggleSelection > Label
+{
+	min-width : 15px;
+}
+
+.LayerMainElement > #LayerImageValue
+{
+	width: 48px;
+	min-width: 48px;
+	height: 48px;
+	margin-right: 5px;
+	-unity-background-scale-mode: stretch-to-fill;
+}
+
+.LayerMainElement > #LayerImageValue > #LayerImageValueIcon
+{
+	width : 16px;
+	height : 16px;
+	margin-left : 32px;
+	margin-top : 32px;
+}
+
+#Layers,
+#Layers > VisualElement > VisualElement
+{
+	flex-grow: 1;
+}
+
+#ReorderSelector
+{
+	width: 0;
+	min-height: 2px;
+	height: 2px;
+	background-color: rgb(58, 121, 187);
+	position: absolute;
+}
+
+#LayerViewButtonAnchor
+{
+	flex-direction: row-reverse;
+	padding: 0px;
+	height: 28px;
+	min-height: 28px;
+	margin-top: auto;
+	border-color: rgb(89, 89, 89);
+	background-color: rgb(33, 33, 33);
+}
+
+#LayerViewButtonAnchor > .LayerViewButton
+{
+	width: 24px;
+	height: 24px;
+	margin-top: 1px;
+	margin-right: 2px;
+	-unity-background-image-tint-color: rgb(197, 197, 197);
+	opacity: 0.5;
+}
+
+#LayerViewButtonAnchor > .LayerViewButton:hover
+{
+	-unity-background-image-tint-color: rgb(179, 179, 179);
+	opacity: 1;
+}
+
+.LayerMainElement > #LayerNameTextfield
+{
+	flex-grow: 1;
+	width: 80px;
+	margin-right: 5px;
+}
+
+.LayerMainElement > #LayerButtonsAnchor
+{
+	flex-direction: column;
+	margin-right: 5px;
+}
+
+.LayerMainElement > #LayerButtonsAnchor > #LayerAddRemoveButton
+{
+	height : 16px;
+	width : 16px;	
+	padding-bottom : 1px;
+	padding-top : 1px;
+}
+
+#ChannelGrid
+{
+	flex-shrink: 0;
+}
+
+#ChannelGrid > #unity-content-viewport > #unity-content-container
+{
+	flex-direction: row;
+}
+
+#ChannelGridColumn
+{
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+}
+
+#LayerOpsMain
+{
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+#LayerOpsMain > #LayerOpsAnchor
+{
+	flex-direction: row;
+}
+
+#LayerOpsMain > #LayerOpsAnchor > #LayerOpsValue
+{
+	flex-grow: 1;
+	margin-right: 3px;
+	max-width: 50px;
+}
+
+
+#LayerOpsMain > #LayerOpsAnchor > #LayerOpsLabel
+{
+	flex-grow: 1;
+	width: 30px;
+	-unity-text-align: upper-right;
+}
+
+#LayersSelectedChannel
+{
+	-unity-font-style: bold;
+	margin-top: 5px;
+}
+
+#ChannelGrid Label.unity-label
+{
+	-unity-font-style: bold;
+}
+
+#LayerSizeAnchor
+{
+	flex-direction: row;
+}
+
+#LayerSizeAnchor > #LayerSizeLabel
+{
+	width: 50px;
+}
+
+
+#LayerSizeAnchor > PopupField
+{
+	flex-grow: 1;
+}
+
+#LayerSizeAnchor > #LayerHeightAnchor
+{
+	flex-grow: 1;
+}
+#LayerSizeAnchor > #LayerHeightAnchor > PopupField
+{
+	flex-grow: 1;
+}
